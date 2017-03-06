@@ -17,7 +17,7 @@
         </div>
     </g:hasErrors>
 
-    <g:form controller="disruption" action="search" class="form-inline" role="search">
+    <g:form controller="home" action="search" class="form-inline" role="search">
         <div class="form-group ${hasErrors(bean: searchCommand, field: 'caseNumber', 'has-error')}">
             <label for="caseNumber" class="control-label col-sm-5">Notification Number</label>
             <input type="text" id="caseNumber" value="${searchCommand.caseNumber}" name="caseNumber" pattern="${searchCommand?.constrainedProperties.caseNumber.matches}" title="Case Number (digits)" placeholder="######" size="7" class="form-control" aria-live="polite" />
